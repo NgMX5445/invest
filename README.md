@@ -1,6 +1,6 @@
 # invest
 
-DB_USER=bwyyys73xnn501aej8rn
+(DB_USER=bwyyys73xnn501aej8rn )
 DB_PASSWORD=pscale_pw_rPJjkqaJYZhhoiAID7kZt8CdBN8Ob6WRDHRnwYemqI8
 DB_HOST=ap-southeast.connect.psdb.cloud
 DB_DATABASE=my_database
