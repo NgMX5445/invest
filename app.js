@@ -14,3 +14,14 @@ app.use((req, res, next) => {
     next();
 });
 app.use(express.static("public"));
+
+// GET MEMBER INTEREST
+app.get(`/modules`, function (req, res) {
+  
+  
+    return res.send("xxxx!!")
+      
+
+ 
+  });
+  module.exports = app;
