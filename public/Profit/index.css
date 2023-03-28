@@ -11,3 +11,14 @@
     
    
 }
+#profit:hover{
+
+    height: 600px;
+    transition: width 2s, height 4s;
+
+    width: 600px;
+
+ 
+    
+   
+}
