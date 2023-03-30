@@ -20,12 +20,12 @@ module.exports = {
 
                 let sql = `
                 INSERT INTO
-	                users (username, email ,contact , password ,type , profile_pic_url)
+	                users (username, email ,contact , password ,type , name)
                 VALUES
                     (?, ?, ?, ?,?,?)`;
 
                 dbConn.query(sql,
-                    [user.d_username, user.d_email, user.d_contact, user.d_password, user.d_type, user.d_profile_pic_url],
+                    [user.username, user.email, user.contact, user.password, user.type, user.name],
                     function (error, q_result) {
                         dbConn.end();
                         if (error) {

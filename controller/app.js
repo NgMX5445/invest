@@ -9,16 +9,35 @@ const User = require("../model/user");
 // } = require("./errors");
 
 const app = express();
+app.use(express.json()) 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     next();
 });
 app.use(express.static("public"));
 
-// GET MEMBER INTEREST
-app.get(`/modules`, function (req, res) {
+app.get(`/user`, function (req, res) {
+console.log("Test 1")
+res.send("test1")
+})
+
+
+// POST USER
+app.post(`/user`, function (req, res) {
   
-    let data="xxx";
+
+
+    let data={
+
+        "username":req.body.username,
+        "email": req.body.email,
+        "name": req.body.name,
+        "password": req.body.password,
+        "type": req.body.type,
+        "contact": req.body.contact
+
+    };
+   
     User.insert(data, function (error, result) {
         let dataJson = {
             'status': -1,
