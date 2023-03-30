@@ -1,24 +1,33 @@
 
 
+window.addEventListener('DOMContentLoaded', function () {
 
-function element(x){
-    let result=document.getElementById(x);
+
+  function element(x){
+    let result=document.getElementById(x).value;
     return result;
 }
 
 
-let x=element(email)
-console.log("email return "+x);
 
 document.getElementById("submit").onclick=function(){
-    
+
+  console.log("email return "+ element("email"));
+  postUser();
 }
 
-function ownPost(Id) {
+function postUser() {
     return fetch(`/user`, {
       method: 'POST',
+      body:JSON.stringify({
+        "username":element("user"),
+        "email": element("email"),
+        "name": element("Name"),
+        "password": element("password"),
+        "type": 0,
+        "contact": element("contact")
+      }),
       headers: {
-        'Access-Control-Allow-Origin': url,
         'Content-Type': 'application/json',
       }
     })
@@ -35,3 +44,4 @@ function ownPost(Id) {
    
 
   }
+})

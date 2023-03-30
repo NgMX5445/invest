@@ -25,7 +25,7 @@ res.send("test1")
 // POST USER
 app.post(`/user`, function (req, res) {
   
-
+console.log("api")
 
     let data={
 
