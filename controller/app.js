@@ -38,7 +38,7 @@ app.post(`/user`, function (req, res) {
 
     };
    
-    User.insert(data, function (error, result) {
+    User.insertUser(data, function (error, result) {
         let dataJson = {
             'status': -1,
             'message': "",

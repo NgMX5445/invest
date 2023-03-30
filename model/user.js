@@ -4,7 +4,7 @@
 let db = require("../controller/databaseConfig");
 
 module.exports = {
-    insert: function (user) {
+    insertUser: function (user) {
         console.log(user);
         // get a connection to the database
         var dbConn = db.getConnection();
