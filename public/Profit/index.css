@@ -23,17 +23,27 @@
    
 }
 
+.pie:hover{
+  --b:26px;
+  --c:rgb(78, 245, 78);
+
+}
 @property --p{
     syntax: '<number>';
     inherits: true;
     initial-value: 1;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    text-align: center;
   }
   
   .pie {
+ 
     --p:20;
     --b:22px;
-    --c:darkred;
-    --w:150px;
+    --c:lightgreen;
+    --w:250px;
   
     width: var(--w);
     aspect-ratio: 1;
@@ -49,7 +59,7 @@
   .pie:after {
     content: "";
     position: absolute;
-    border-radius: 50%;
+    border-radius: 60%;
   }
   .pie:before {
     inset: 0;
