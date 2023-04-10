@@ -61,7 +61,7 @@ module.exports = {
         – 賺了股息，虧了差價
         延伸閱讀：小心賺了股息卻賠了本金！你該知道的3個常見高股息陷阱
         `
-        let d;
+        let d ;
         DPS || EPS != null || "" ?
             d = DPS / EPS :
             d = `check your input !!`
