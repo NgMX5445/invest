@@ -1,26 +1,24 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
-
+    width: 5000px;
+    table-layout: fixed ;
   }
   
   td, th {
     border: 1px solid #dddddd;
     text-align: center;
-    padding: 45px;
-    width: 1000px;
+
+
   }
   
   tr:nth-child(even) {
     background-color: #dddddd;
   }
-  .line{
-    z-index:20;
-
-    left:100;
-    width: 2px;
-    height: 200px;
+  #line{
+    height: 300px;
     border-right: 2px solid green;
     position:absolute
   }
+
+ 
